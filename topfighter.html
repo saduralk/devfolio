@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlo Sadural - Gameplay Programmer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+	    padding: 10px;
+	    top: 0;
+	    position: sticky;
+            background-color: #333;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 30px;
+            color: #ffcc00;
+        }
+	h3 {
+	    font-size: 30px;
+	}
+        .section {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 1000px;
+            text-align: left;
+            padding: 50px;
+            background-color: #292929;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .project {
+            margin: 30px 0;
+        }
+        .project h3 {
+            margin: 5px 0;
+            color: #ffcc00;
+        }
+        .project p {
+            margin: 5px 0;
+            color: #ddd;
+        }
+        .gif-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Programming</a>
+        <a href="about.html">About</a>
+	<a href=https://www.linkedin.com/in/karlo-sadural/ target="_blank">Linkedin</a>
+	<a href=https://github.com/saduralk target="_blank">GitHub</a>
+    </div>
+    <div class="container">
+        <h1>Top Fighter</h1>
+        <h3>2D Fighting Game | Unreal Engine 5 | Blueprints</h3>
+        
+        <div id="overview" class="section">
+            <h2>Project Overview</h2>
+            <p>Top Fighter is a 2D fighting game featuring multiple character and stage options.</p>
+        </div>
+        
+        <div id="features" class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Developed in Unreal Engine 5 using Blueprints</li>
+                <li>Local multiplayer</li>
+                <li>Data-driven code--carrying information (selected character) from level to level</li>
+		<li>Functional settings menu</li>
+		<li>2D Combat with a focus on Game Feel</li>
+            </ul>
+        </div>
+        
+        <div id="media" class="section">
+            <h2>Gameplay Showcase</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/biMmsCkUcTs?si=5moylwA12PaK_ICL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>Dojo Level</h2>
+<img src="Screenshot 2025-03-31 145431.png" width="700" height="415">
+
+<h2>Character Select; Passing Information Level to Level</h2>
+<iframe src="https://blueprintue.com/render/504dfg_7/" scrolling="no" allowfullscreen frameborder="0" width="1000" height="700"></iframe>
+<p>When one character button is clicked, the character data, which is its Animation Blueprint, is saved to the game instance, which can be referenced and used in all levels throughout the game.</p>
+
+
+<h2>Multiplayer Logic</h2>
+<iframe src="https://blueprintue.com/render/vuunwp56/" scrolling="no" allowfullscreen width="1000" height="700" frameborder="0"></iframe>
+<p>Local Multiplayer logic is handled in the level blueprint. Both player animation blueprints are set based on the same value from the game instance, which is set from the character select screen.</p>
+
+<h2>Multiplayer Combat Logic</h2>
+<iframe src="https://blueprintue.com/render/gj7l55br/" scrolling="no" allowfullscreen width="1000" height="700" frameborder="0"></iframe>
+<p>Local Multiplayer combat for bother player 1 and 2 logic is handled in the player blueprint.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
