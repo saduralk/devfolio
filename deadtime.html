@@ -76,11 +76,37 @@
             margin-top: 10px;
             border-radius: 5px;
         }
+
+	.dropdown a {
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+
+	.dropdown .content{
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	box-shadow: 0px 0px 15px white;
+	padding: 5px 0px;
+	}
+
+	.dropdown:hover .content{
+	display: block;
+	text-decoration: none;
+	}
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">Games</a>
+        <div class="dropdown"><a href="index.html">Games</a>
+		<div class="content">
+			<a href="projectastro.html">Project Astro</a>
+			<a href="dyscharged.html">Dyscharged</a>
+			<a href="topfighter.html">Top Fighter</a>
+			<a href="deadtime.html">Dead Time</a>
+		</div>
+	</div>
         <a href="about.html">About</a>
 	<a href="rresume.html">Resume</a>
 	<a href=https://www.linkedin.com/in/karlo-sadural/ target="_blank">Linkedin</a>
