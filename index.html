@@ -4,111 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karlo Sadural</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #1e1e1e;
-            color: white;
-        }
-        .header {
-            display: flex;
-            justify-content: flex-end;
-	    padding: 10px;
-	    top: 0;
-	    position: sticky;
-            background-color: #333;
-        }
-        .header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .header a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        h1 {
-            font-size: 50px;
-            margin: 10px 0;
-        }
-        h2 {
-            font-size: 30px;
-            color: #bbb;
-        }
-        .section {
-            margin: 35px auto;
-            width: 80%;
-            max-width: 1000px;
-            text-align: left;
-            padding: 20px;
-            background-color: #292929;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-        .project {
-            margin: 30px 0;
-        }
-        .project h3 {
-            margin: 5px 0;
-            color: #ffcc00;
-        }
-        .project p {
-            margin: 5px 0;
-            color: #ddd;
-        }
-        .gif-placeholder {
-            width: 100%;
-            height: 200px;
-            background-color: #444;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            margin-top: 10px;
-            border-radius: 5px;
-        }
-
-	.dropdown a {
-		display: block;
-		color: white;
-		text-decoration: none;
-	}
-
-	.dropdown .content{
-	display: none;
-	position: absolute;
-	min-width: 100px;
-	box-shadow: 0px 0px 15px white;
-	padding: 5px 0px;
-	}
-
-	.dropdown:hover .content{
-	display: block;
-	text-decoration: none;
-	}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
         <div class="dropdown"><a href="index.html">Games</a>
 		<div class="content">
-			<a href="projectastro.html">Project Astro</a>
-			<a href="dyscharged.html">Dyscharged</a>
-			<a href="topfighter.html">Top Fighter</a>
-			<a href="deadtime.html">Dead Time</a>
 			<a href="startempest.html">Star Tempest Studios</a>
 			<a href="projectspearhead.html">Project Spearhead</a>
 		</div>
 	</div>
+        <div class="dropdown"><a href="archive.html">Archive</a>
+		<div class="content">
+			<a href="projectastro.html">Project Astro</a>
+			<a href="dyscharged.html">Dyscharged</a>
+			<a href="topfighter.html">Top Fighter</a>
+			<a href="deadtime.html">Dead Time</a>
+		</div>
+	</div>
         <a href="about.html">About</a>
 	<a href="rresume.html">Resume</a>
-	<a href=https://www.linkedin.com/in/karlo-sadural/ target="_blank">Linkedin</a>
+	<a href=https://www.linkedin.com/in/karlo-sadural/ target="_blank">LinkedIn</a>
 	<a href=https://github.com/saduralk target="_blank">GitHub</a>
 
     </div>
@@ -119,6 +35,15 @@
 
     <div class="section">
         <h2>Projects</h2>
+        <div class="project">
+            <a href="startempest.html"><h3>Star Tempest Studios - Volunteer Position</h3></a>
+            <p><strong>Role:</strong> Volunteer Gameplay Programmer</p>
+            <p><strong>Group Size:</strong> 18</p>
+            <p><strong>Engine:</strong> Unreal Engine 5</p>
+	    <p><strong>Tools:</strong> Blueprints, GitHub</p>
+            <p><strong>Contributions:</strong> Dialogue, Inventory, Mount/Hovercraft/Snowboard</p>
+            <a href="startempest.html"><img src="ezgif-113fc91c9bd9e6d8.gif" width="800"></a>
+        </div>
 	<div class="project">
             <a href="projectspearhead.html"><h3>Project Spearhead - Student Capstone Project</h3></a>
             <p><strong>Role:</strong> Gameplay Programmer/Multiplayer Engineer</p>
@@ -128,33 +53,7 @@
             <p><strong>Contributions:</strong> Online Multiplayer, Interaction System, Player Statistics</p>
             <a href="projectspearhead.html"><img src="spearheadgif.gif" width="800"></a>
         </div>
-        <div class="project">
-            <a href="startempest.html"><h3>Star Tempest Studios - Volunteer Position</h3></a>
-            <p><strong>Role:</strong> Volunteer Gameplay Programmer</p>
-            <p><strong>Group Size:</strong> 18</p>
-            <p><strong>Engine:</strong> Unreal Engine 5</p>
-	    <p><strong>Tools:</strong> Blueprints, GitHub</p>
-            <p><strong>Contributions:</strong> Dialogue, Inventory, Mount/Hovercraft/Snowboard</p>
-            <a href="startempest.html"><img src="startempestgif.gif" width="800"></a>
-        </div>
-	<div class="project">
-            <a href="dyscharged.html"><h3>Dyscharged - Independent Group Project</h3></a>
-            <p><strong>Role:</strong> Gameplay Programmer</p>
-            <p><strong>Group Size:</strong> 10</p>
-            <p><strong>Engine:</strong> Unreal Engine 5</p>
-	    <p><strong>Tools:</strong> C++, Blueprints, GitHub</p>
-            <p><strong>Contributions:</strong> Dialogue and item interactions</p>
-            <a href="dyscharged.html"><img src="09aaaa_8c39d685f3d54ecaa868b9be5ee702de~mv2.gif" width="800"></a>
-        </div>
-        <div class="project">
-            <a href="projectastro.html"><h3>Project Astro - Class Project</h3></a>
-            <p><strong>Role:</strong> Gameplay Programmer</p>
-            <p><strong>Group Size:</strong> 4</p>
-            <p><strong>Engine:</strong> Unreal Engine 5</p>
-	    <p><strong>Tools:</strong> Blueprints, GitHub, Jira</p>
-            <p><strong>Contributions:</strong> Core game loop (player vs enemy)</p>
-            <a href="projectastro.html"><img src="09aaaa_3a89482f3e5e4cf79cabb179c278943b~mv2.gif" width="800"></a>
-        </div>
+
     </div>
 
     <div class="section">
