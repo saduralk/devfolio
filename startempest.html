@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karlo Sadural - Gameplay Programmer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     </head>
 <body>
     <div class="header">
+	<div class="header-title">Karlo Sadural - Technical Designer</div>
         <div class="dropdown"><a href="index.html">Games</a>
 		<div class="content">
 			<a href="startempest.html">Star Tempest Studios</a>
@@ -31,36 +33,54 @@
     <div class="container">
         <h1>Star Tempest Studios</h1>
         <h3>2D Platformer | Unreal Engine 5 | Blueprints | WIP</h3>
+	<h3><small>Scripting core gameplay systems as a volunteer programmer for an unannounced platformer.</small></h3>
+	<h3><small>Blueprint Dialogue System | Inventory Actor Component | Player Vehicles | Saving/Loading</small></p>
+	
         
-        <div id="overview" class="section">
+        <!-- <div id="overview" class="section">
             <h2>Project Overview</h2>
-            <p>As a volunteer at Star Tempest Studios, I'm working as a Game Programmer on their currently Untitled Platformer Game.</p>
-        </div>
+            <p>Volunteering as a Game Programmer on an Untitled Platformer Game at Star Tempest Studios, scripting in Blueprints.</p>
+        </div> -->
         
-        <div id="features" class="section">
+        <!-- <div id="features" class="section">
             <h2>Key Features</h2>
             <ul>
-                <li>Dialogue system</li>
-                <li>Inventory system</li>
-                <li>Mount System: Riding Triceratops and Hovercraft</li>
+                <li></strong>Designer-friendly <strong>dialogue system</strong></li>
+                <li>Scalable, component-based <strong>inventory system</strong></li>
+                <li>Movement logic for <strong>3 distinct vehicle types (Mount, Hovercraft, Snowboard)</strong></li>
             </ul>
-        </div>
+        </div> -->
         
         <div id="media" class="section">
-            <h2>Gameplay showcase</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZetHSbXZKD8?si=W_Zcdhpg7KIwxIxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <h2>Gameplay showcase</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZetHSbXZKD8?si=W_Zcdhpg7KIwxIxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-<h2>NPC Blueprint Code</h2>
-<iframe src="https://blueprintue.com/render/qd7mwx8d/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
-
-<h2>NPC Blueprint Macro Dialogue Handler</h2>
-<iframe src="https://blueprintue.com/render/97qlhq8j/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
-
-<h2>Dialogue Widget Logic</h2>
-<iframe src="https://blueprintue.com/render/tec718a8/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
-        </div>
-    </div>
-
+<h2>Dialogue System - Blueprint Scripted</h2>
+<!-- <iframe src="https://blueprintue.com/render/qd7mwx8d/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe> -->
+<h3>Result: </h3>
+<a href="startempest.html"><img src="dialoguegif.gif" width="800"></a>
+<h3>How it works:</h3>
+	<li>Player presses E next to an NPC</li>
+	<li>NPC actor passes dialogue info (data table) to widget</li>
+	<li>Widget reads data table info onto screen</li>
+<h2>Widget Reads the Data Table Information</h2>
+<iframe src="https://blueprintue.com/render/4qjpdqnt/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+<h2>Loading/Saving an Inventory</h2>
+<h3>How it works:</h3>
+	<li>The game starts, the function is called.</li>
+	<li>The widget checks for save files.</li>
+	<li>If it finds one, it loads its brush and name.</li>
+	<li>Sets image to brush, and text in widget to weapon name.</li>
+<iframe src="https://blueprintue.com/render/teugmsji/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+<h2>Player Mounting Vehicles</h2>
+<h3>Result:</h3>
+<img src="ezgif-113fc91c9bd9e6d8.gif" width="800">
+<h3>How it works:</h3>
+	<li>When the player lands, line trace goes down 500 pixels.</li>
+	<li>It looks for object of type "Hovecraft."</li>
+	<li>If it finds one, it gets its variable "E_MountType," which is Triceratops, Hovercraft, or Snowboard.</li>
+	<li>If it's Hovercraft or Snowboard, it executes an interface message to set pawn class to Hovercraft or Snowboard respectively.</li>
+<iframe src="https://blueprintue.com/render/u-zntb7r/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
 
 </body>
 </html>
