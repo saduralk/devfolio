@@ -12,6 +12,8 @@
 	<div class="header-title">Karlo Sadural - Technical Designer</div>
         <div class="dropdown"><a href="index.html">Games</a>
 		<div class="content">
+			<a href="combatproject.html">Combat Project</a>
+
 			<a href="startempest.html">Star Tempest Studios</a>
 			<a href="projectspearhead.html">Project Spearhead</a>
 		</div>
@@ -33,17 +35,35 @@
     <div class="container">
         <h1>Project Spearhead</h1>
         <h3>Multiplayer Stealth Game | Unreal Engine 5 | Blueprints | C++ | Student Capstone Project | WIP <br> Role: Multiplayer Engineer</br></h3>
-<h3>Online Steam Multiplayer | Interaction System | Replicated Player Statistics</h3>
-     
-        
+<h3>Online Steam Multiplayer | Interaction System | Replicated Player Statistics | Player Skills Framework</h3>
         <div id="media" class="section">
-
-
-<h2>Player Camera Trace for Dynamic Interaction</h2>
-<iframe src="https://blueprintue.com/render/ubdlq8tp/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
-
-<h2>Camera Trace Function for Dynamic Interaction</h2>
+<h2>Camera Trace Function</h2>
 <iframe src="https://blueprintue.com/render/awvjj9ft/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
+<li>Sphere trace happens 500 pixels ahead</li>
+<li>Looks for actor with interface "Highlight"</li>
+<li>Checks bCanHighlight? (if player is in actor's collision box)</li>
+<li>Make Outline visible if true</li>
+<li>If no actors are found, all actors will be unhighlighted.</li>
+<h2>Lobby System</h2>
+<img src="SteamScreenshot.png" width="800">
+<iframe src="https://blueprintue.com/render/d524wa_j/" scrolling="no" allowfullscreen width="1000" height="715" frameborder="0"></iframe>
+<li>Every time a player joins a server, Update Player List is called.</li>
+<li>It filters through Game State -> "Player Array" which holds Player States.</li>
+<li>Player States hold information like Steam Profile Picture and Steam Username.</li>
+<li>Host player is detected as they are the zero index in the player array no matter what.</li>
+<li>Host player is above the rest of the players, only they can start the game.</li>
+<li>For chat, text is submitted into an input box. The server then sends that text and player name to all clients.</li>
+<h2>Player Statistics</h2>
+<script src="https://gist.github.com/saduralk/1aff5b1cfcc3e1a232bea348e81beeb7.js"></script>
+<li>A replicated Actor Component has been created to hold Character Stats.</li>
+<li>With this component, in multiplayer, each player and NPC has their own amount of Health, Mana, Charisma, XP, etc.</li>
+<h2>Player Skills</h2>
+<li>To set a given skill (in slots 1, 2, 3, or 4), the function should be called.</li>
+<li>It also takes an input of type "FAbilityData" which holds AbilityName, Description, and Mana Cost.</li>
+<li>When skill is set, it can be properly used (see below).</li>
+<li>It takes the given set skill, breaks open the structure, takes its AbilityName.</li>
+<li>Based on the given AbilityName, different functions can be run, allowing for fellow designer iteration.</li>
+<script src="https://gist.github.com/saduralk/a87dad9daa519c5001bc4a47dccd3b3a.js"></script>
         </div>
     </div>
 
