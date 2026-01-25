@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlo Sadural - Gameplay Programmer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    </head>
+<body>
+    <div class="header">
+	<div class="header-title">Karlo Sadural - Technical Designer</div>
+        <div class="dropdown"><a href="index.html">Games</a>
+		<div class="content">
+			<a href="startempest.html">Star Tempest Studios</a>
+			<a href="projectspearhead.html">Project Spearhead</a>
+		</div>
+	</div>
+        <div class="dropdown"><a href="archive.html">Archive</a>
+		<div class="content">
+			<a href="projectastro.html">Project Astro</a>
+			<a href="dyscharged.html">Dyscharged</a>
+			<a href="topfighter.html">Top Fighter</a>
+			<a href="deadtime.html">Dead Time</a>
+		</div>
+	</div>
+        <a href="about.html">About</a>
+	<a href="rresume.html">Resume</a>
+	<a href=https://www.linkedin.com/in/karlo-sadural/ target="_blank">LinkedIn</a>
+	<a href=https://github.com/saduralk target="_blank">GitHub</a>
+
+    </div>
+    <div class="container">
+        <h1>Combat Project | Personal Project</h1>
+        <h3>Gameplay Ability Systems | Blueprints | C++</h3>
+	<h3><small>Melee and Ranged Combat | Player vs. AI</small></h3>	
+        
+        <!-- <div id="overview" class="section">
+            <h2>Project Overview</h2>
+            <p>Volunteering as a Game Programmer on an Untitled Platformer Game at Star Tempest Studios, scripting in Blueprints.</p>
+        </div> -->
+        
+        <!-- <div id="features" class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li></strong>Designer-friendly <strong>dialogue system</strong></li>
+                <li>Scalable, component-based <strong>inventory system</strong></li>
+                <li>Movement logic for <strong>3 distinct vehicle types (Mount, Hovercraft, Snowboard)</strong></li>
+            </ul>
+        </div> -->
+        
+        <div id="media" class="section">
+            <!-- <h2>Gameplay showcase</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZetHSbXZKD8?si=W_Zcdhpg7KIwxIxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+<h2>Melee Combat</h2>
+<img src="2026-01-25 14-51-54.gif" height="400" width="800">
+
+<li>Presses input, <strong>Gameplay Ability "Axe Combo"</strong> begins.</li>
+<li>Animation montage begins--only continues if presses again.</li>
+<li>An AnimNotify displays the Niagra particle.</li>
+<li>Multi-sphere trace by channel. follows the axe's motion and applies <strong>Gameplay Effect Damage</strong> via Gameplay Tag.</li>
+<li>On death, the actor is lifted and ragdolls, disabling collision.</li>
+
+<h2>Melee Attack Combo Code</h2>
+<iframe src="https://blueprintue.com/render/r7vas14g/" scrolling="no" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+
+<h2>Death Code</h2>
+<script src="https://gist.github.com/saduralk/0bdab741f06c183f8ce7a9be5648f649.js"></script>
+
+<h2>Ranged Combat</h2>
+<img src="2026-01-25 15-28-02.gif" height="400" width="800">
+<li>For <strong>Gameplay Ability Dash</strong>, a niagra particle is simply spawned and the player is moved forward on activation.</li>
+<li><strong>Gameplay Ability Area of Effect Attack</strong> has two phases: targeting and attacking.</li>
+<li>AI simply finds player's location for target.</li>
+<li>Player is given control over targeting.</li>
+<li>Targeted area is highlighted with a <strong>decal</strong>.</li>
+<li>Niagra particle is spawned, multisphere trace by channel appears, damage is applied via <strong>Gameplay Tags</strong> to each actor.</li>
+<li>For <strong>Gameplay Ability Ranged Attack - Shoot Projectile</strong>, an <strong>animation notify</strong> plays on the animation montage.</li>
+<li>It spawns a projectile, moving directly ahead of the camera.</li>
+<h2>Area of Effect Attack Code</h2>
+<iframe src="https://blueprintue.com/render/12_y6aon/" scrolling="no" scrolling="no" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+<h2>Calculate Target for Projectile Code</h2>
+<iframe src="https://blueprintue.com/render/wo_iqofp/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+<h2>Shoot Projectile Code</h2>
+<iframe src="https://blueprintue.com/render/rubkdrri/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+<h2>Dash Ability Code</h2>
+<iframe src="https://blueprintue.com/render/bo5tedwf/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
