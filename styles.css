@@ -60,6 +60,7 @@ body {
         }
         .project p {
             margin: 5px 0;
+	    margin-bottom: 0.9rem;
             color: #ddd;
         }
         .gif-placeholder {
@@ -92,29 +93,3 @@ body {
 	display: block;
 	text-decoration: none;
 	}
-.carousel-container {
-  overflow: hidden; /* Hide the duplicated content outside the view */
-  width: 100%;
-}
-
-.carousel-group {
-  display: flex;
-  /* Calculate total width for infinite scroll, e.g., 200% for 2 copies */
-  height: 20%;
-  width: 100%;
-  animation: autoscroll 10s linear infinite; /* Adjust duration as needed */
-}
-
-.carousel-group:hover {
-  animation-play-state: paused; /* Pause on hover for better UX */
-}
-
-@keyframes autoscroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* Move exactly half the width (back to the start of the second copy) */
-    transform: translateX(-50%);
-  }
-}
