@@ -65,21 +65,39 @@
             <div class="slideshow-container" onmouseover="pauseSlides()" onmouseout="resumeSlides()">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
+  <div class="numbertext">1 / 6</div>
   <img src="Submarine Periscope Simulation.gif" style="height: 600px; width: 1000px;">
   <div class="text">Demonstration (no audio)</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
+  <div class="numbertext">2 / 6</div>
 <iframe width="1000px" height="600px" src="https://www.youtube.com/embed/kpU2El9xBIc?si=nlbzNBi0kgPxNUmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 <div class="text">Demonstration (audio)</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="spearheadgif.gif" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="numbertext">3 / 6</div>
+  <img src="Screenshot 2026-04-06 183843.png" style="width:100%">
+  <div class="text">Structure Part 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Screenshot 2026-04-06 184137.png" style="width: 1000px; height: 400px;">
+  <div class="text">Structure Part 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+    <img src="Screenshot 2026-04-06 185739.png" style="width: 100%; height: 100%;">
+  <div class="text">Auto Tutorial Progression Logic</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+<iframe src="https://blueprintue.com/render/nsz4p2nb/" scrolling="no" allowfullscreen frameborder="0" style="width: 1000px; height: 600px;"></iframe>
+<div class="text">Full Tutorial Widget Logic</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -92,6 +110,11 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+
+
 </div>
          </div>
 
@@ -153,30 +176,5 @@ function showSlides(n) {
 <li>If "bPressAnyKeytoContinue" is true and "bShowPrompt" is true, when the prompt reading "Press Any Key To Continue" appears, the user can press any keyboard button to progress in the simulation.</li>
 <li>The "Required Actor" is important for the interaction tutorial step. It checks if the actor is present in an array of actors stored in the Game Instance--this indicates the actor has been interacted with.</li>
 </div>
-
-
-<!-- <h2>Melee Attack Combo Code</h2>
-<iframe src="https://blueprintue.com/render/r7vas14g/" scrolling="no" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
-
-<h2>Death Code</h2>
-<script src="https://gist.github.com/saduralk/0bdab741f06c183f8ce7a9be5648f649.js"></script>
-
-<h2>Ranged Combat</h2>
-<img src="2026-01-25 15-28-02.gif" height="400" width="800">
-<li>For <strong>Gameplay Ability Dash</strong>, a niagra particle is simply spawned and the player is moved forward on activation.</li>
-<li><strong>Gameplay Ability Area of Effect Attack</strong> has two phases: targeting and attacking.</li>
-<li>AI simply finds player's location for target.</li>
-<li>Player is given control over targeting.</li>
-<li>Targeted area is highlighted with a <strong>decal</strong>.</li>
-<li>Niagra particle is spawned, multisphere trace by channel appears, damage is applied via <strong>Gameplay Tags</strong> to each actor.</li>
-<li>For <strong>Gameplay Ability Ranged Attack - Shoot Projectile</strong>, an <strong>animation notify</strong> plays on the animation montage.</li>
-<li>It spawns a projectile, moving directly ahead of the camera.</li>
-<h2>Area of Effect Attack Code</h2>
-<h2>Calculate Target for Projectile Code</h2>
-<iframe src="https://blueprintue.com/render/wo_iqofp/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
-<h2>Shoot Projectile Code</h2>
-<iframe src="https://blueprintue.com/render/rubkdrri/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe>
-<h2>Dash Ability Code</h2>
-<iframe src="https://blueprintue.com/render/bo5tedwf/" scrolling="no" width="1000" height="715" frameborder="0" allowfullscreen></iframe> -->
 </body>
 </html>
